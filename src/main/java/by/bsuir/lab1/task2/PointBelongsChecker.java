@@ -1,6 +1,6 @@
 package by.bsuir.lab1.task2;
 
-public class PointBelongsChecker {
+public class PointBelongsChecker<T extends Number>  {
     private static final int firstRectX1 = -4;
     private static final int firstRectX2 = 4;
     private static final int firstRectY1 = 0;
@@ -11,7 +11,7 @@ public class PointBelongsChecker {
     private static final int secondRectY1 = -3;
     private static final int secondRectY2 = 0;
 
-    public static <T extends Number> boolean isBelong(T xValue, T yValue){
+    public boolean isBelong(T xValue, T yValue){
         double x = xValue.doubleValue();
         double y = yValue.doubleValue();
 

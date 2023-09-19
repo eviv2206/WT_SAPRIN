@@ -7,7 +7,10 @@ public class Main {
         ManagerIO<Double> managerIO = new ManagerIO<>();
         double x = managerIO.inputValue(ManagerIO.MESSAGE_INPUT_VALUE_X, Double.class);
         double y = managerIO.inputValue(ManagerIO.MESSAGE_INPUT_VALUE_Y, Double.class);
-        boolean res = PointBelongsChecker.isBelong(x, y);
+
+        PointBelongsChecker<Double> pointBelongsChecker = new PointBelongsChecker<>();
+        boolean res = pointBelongsChecker.isBelong(x, y);
+
         managerIO.showResult(res, ManagerIO.MESSAGE_OUTPUT_RESULT);
     }
 
