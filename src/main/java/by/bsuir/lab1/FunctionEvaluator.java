@@ -8,7 +8,7 @@ public class FunctionEvaluator {
     }
 
     public static Double[][] calcTngWithStep(double a, double b, double h){
-        int numOfSteps = (int) Math.floor((b - a / h));
+        int numOfSteps = (int) Math.floor(((b - a) / h));
         Double[][] resArr = new Double[2][numOfSteps];
         for (int i = 0; i < numOfSteps; i++){
             resArr[i][0] = a;
