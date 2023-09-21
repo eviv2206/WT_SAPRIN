@@ -1,4 +1,4 @@
-package by.bsuir.lab1.task9;
+package by.bsuir.lab1.task9_11;
 
 import org.junit.jupiter.api.Test;
 
